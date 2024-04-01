@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima de mi ciudad</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body onload="onLoad()">
+    <div id="container" class="container">
+
+        <div class="container-date">
+            <div class="date-location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p id="location" class="location"></p>
+            </div>
+            <p id="date" class="date"></p>
+        </div>
+        
+
+        <div class="image">
+            <img id="mi-image" src="" alt="">
+        </div>
+
+        <div id="card-weather" class="card-weather">
+            <p id="temperature" class="temperature" ></p>
+            
+            <p id="weather" class="weather"></p>
+
+            <div class="content-weather">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text-content">
+                        <p id="humidity"></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="windspeed">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text-content">
+                        <p id="windspeed"></p>
+                        <p>Wind peed</p>
+                    </div>
+                </div>
+            </div>            
+            
+        </div>
+
+        
+    </div>
+
+    <div id="figura-fondo" class="figura-fondo"></div>
+    
+    <div  id="loader" class="container-loader">
+        <div id="loader-l" class="loader">Loading...</div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/e592da9494.js" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>
